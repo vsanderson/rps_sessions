@@ -1,0 +1,9 @@
+<p> <%=@result%> </p>
+<p>Player : <%= session[:wins]%> </p>  
+<!-- Sessions variable | It can store data as long as the browser is open -->
+<p>Computer : <%=  session[:losses]%> </p>
+<!-- <p>Computer : <%= @losses%> </p> This will only work once, does not continue to save data --> 
+
+<p>Ties : <%= session[:ties]%> </p>
+<!-- <p>Ties  : <%= @ties%> </p> This will only work once, does not continue to save data -->
+<a href="/"> <button type "button"> Play Again </button></a>
